@@ -33,6 +33,11 @@ Code: let myFirstPlace = new Place("my location", ["landmark1","landmark2"], "ti
       myFirstPlace;
 Output: Place {location: 'my location', landmarks: Array(2), time: 'time', notes: 'my notes'}    
 
+Describe: List()
+Test: It should create a list of places object
+Code: let myList = new List()
+      myList;
+Output: List {places: {…}}
 
 ## Known Bugs
 

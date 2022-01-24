@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
   <link href='css/styles.css' rel='stylesheet' type='text/css'>
   <script src='js/jquery-3.6.0.js'></script>
-  <script src='js/scripts.js'></script>
+  <script src='js/scriptsToDo.js'></script>
   <title>Title</title>
 </head>
 <body>
   <div class="container">
-  
+    <form id="form">
+      <div class="form-group">
+        <input type="text" id="description" placeholder="Description">
+      </div>
+      <div class="form-group">
+        <input type="date" id="due-date" placeholder="Due Date">
+      </div>
+      <div class="form-group">
+        <input type="text" id="owner1" placeholder="Owner 1">
+        <input type="text" id="owner2" placeholder="Owner 2">
+      </div>
+      <div class="form-group">
+        <label for="complete">Mark as complete</label>
+        <input type="checkbox" id="complete">
+      </div>
+      <div class="form-group">
+        <button type="submit">Add Task</button>
+      </div>
+    </form>
   </div>
+  <div id="task-names">
+  </div>
+
 </body>
 </html>

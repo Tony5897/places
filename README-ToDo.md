@@ -30,9 +30,9 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 Describe Task()
 Test: It should create a task object
 Code:
-let task1 = new Task("task description","due date",["task owner1", "task owner2"],false)
+let task1 = new Task("task description","due date",["task owner1", "task owner2"],"off")
 task1;
-Output: Task {description: 'task description', dueDate: 'due date', owners: Array(2), isComplete: false}
+Output: Task {description: 'task description', dueDate: 'due date', owners: Array(2), isComplete: 'off'}
 
 Describe: List()
 Test: It should create a list of tasks object and assignId
@@ -40,16 +40,23 @@ Code:
 let list = new List()
 list      
 Output: List {tasks: {…}, currentId: 0}
-Describe: List()
-Test: It should create a list of tasks object and assignId
+
+Describe: List.prototype.assignId(currentId)
+Test: It should assign an incremental ID to tasks stored in a List
 Code:
 let list = new List()
-list      
-Output: List {tasks: {…}, currentId: 0}
+list.assignId()
+Output: 1.....2.....3
 
-
-
-
+Describe List.Prototype.addTask()
+Test: It should add a task to a list.
+Code:
+let list = new List()
+let task1 = new Task("task description","due date",["task owner1", "task owner2"],"off")
+task1;
+list.addTask(task1);
+list.tasks;
+Output: 1: Task {description: 'task description', dueDate: 'due date', owners: Array(2), isComplete: 'off'' id: 1}
 
 ## Known Bugs
 

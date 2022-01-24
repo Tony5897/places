@@ -50,6 +50,13 @@ Code: let myList = new List()
       myList.assignId();
 Output: 1
 
+Describe: List.Prototype.addPlace()
+Test: It should add a place to a list.
+Code: let myFirstPlace = new Place("my location", ["landmark1","landmark2"], "time", "my notes");
+      myList.addPlace(myFirstPlace);
+      myList.places;
+Output: 1:  Place {location: 'my location', landmarks: Array(2), time: 'time', notes: 'my notes', id: 1}
+
 ## Known Bugs
 
 * _Any known issues_

@@ -26,11 +26,30 @@ _{This is a detailed description of your application. Give as much detail as nee
 _{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
 
 ## Specifications
+
 Describe Task()
 Test: It should create a task object
-Code: let task1 = new Task("task description","due date",["task owner1", "task owner2"],false)
-      task1;
+Code:
+let task1 = new Task("task description","due date",["task owner1", "task owner2"],false)
+task1;
 Output: Task {description: 'task description', dueDate: 'due date', owners: Array(2), isComplete: false}
+
+Describe: List()
+Test: It should create a list of tasks object and assignId
+Code:
+let list = new List()
+list      
+Output: List {tasks: {…}, currentId: 0}
+Describe: List()
+Test: It should create a list of tasks object and assignId
+Code:
+let list = new List()
+list      
+Output: List {tasks: {…}, currentId: 0}
+
+
+
+
 
 ## Known Bugs
 

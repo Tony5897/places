@@ -5,3 +5,10 @@ function Task(description, dueDate, owners, isComplete) {
   this.owners = owners;
   this.isComplete = isComplete;
 }
+
+// Business logic for Tasks list
+function List() {
+  this.tasks = {};
+  this.currentId = 0;
+}
+

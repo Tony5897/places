@@ -39,6 +39,11 @@ Code: let myList = new List()
       myList;
 Output: List {places: {…}}
 
+Test: It should add currentId property equal to 0
+Code: let myList = new List()
+      myList.currentId;
+Output: 0;
+
 ## Known Bugs
 
 * _Any known issues_

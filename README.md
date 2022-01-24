@@ -44,6 +44,12 @@ Code: let myList = new List()
       myList.currentId;
 Output: 0;
 
+Describe: List.prototype.assignId(currentId)
+Test: It should return currentId + 1
+Code: let myList = new List()
+      myList.assignId();
+Output: 1
+
 ## Known Bugs
 
 * _Any known issues_
